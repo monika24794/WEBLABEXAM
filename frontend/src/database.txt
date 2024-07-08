@@ -1,0 +1,15 @@
+use sample // create sample database and switch to database
+db // current database
+show // show database
+db.createCollection("Tv")// create new collection table
+db.Tv.insert({id:1,name:"LCD",brand:"sony",size:12})
+db.Tv.insert({id:2,name:"LCD",brand:"LG",size:24})
+db.Tv.insert({id:3,name:"LCD",brand:"MI",size:38})
+db.Tv.insert({id:4,name:"SmartTv",brand:"Sony",size:42})
+;
+
+remove ,delete
+db.tv.remove({ id:1})
+  
+update
+db.tv.update({name:"LCD"},{$set:{name:"S-LCD"}})
